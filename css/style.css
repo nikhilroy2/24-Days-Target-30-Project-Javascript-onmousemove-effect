@@ -1,0 +1,81 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: #1a3232;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: hidden;
+}
+
+.nl_img_wrapper {
+  width: 400px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.nl_img_wrapper img {
+  width: 50%;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: block;
+  cursor: move;
+}
+
+.nl_img_wrapper img:nth-child(1) {
+  top: -5%;
+  left: 0px;
+  width: 60%;
+  height: 60%;
+}
+
+.nl_img_wrapper img:nth-child(2) {
+  top: 10%;
+  left: 50%;
+}
+
+.nl_img_wrapper img:nth-child(3) {
+  top: 50%;
+  left: 20%;
+}
+
+.project {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  padding: 8px;
+  background: #ff0;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .nl_img_wrapper {
+    width: 250px;
+    height: 250px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
